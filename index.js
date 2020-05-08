@@ -134,28 +134,5 @@ app.delete('/api/delete/:id', function (req, res) {
 });
 
 
-app.listen(PORT)
-    console.log("App listening port:5000");
-
-
-
-/*var id = req.params.id;
-    var data = {
-        name: req.params.name,
-        jname: req.params.jname,
-        weight: req.params.weight,
-        pokedex: req.params.pokedex,
-        type: req.params.type
-    };
-
-    pokemon.findByIdAndUpdate(id, data, {new:true},(err, results) => {
-        if(err) {
-            console.log("Error occured");
-            console.log(err);
-            res.status(500).send("Update aborted due error");
-        }else{
-            console.log('Entry with id ${id} updated');
-            console.log(results);
-            res.status(200).send("Entry with id ${id} updated")
-        }
-        res.json(results);*/
+app.listen(PORT);
+console.log("App listening port:5000");
