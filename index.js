@@ -3,10 +3,10 @@ var http = require("http");
 var fs = require("fs");
 var express = require('express');
 var app = express();
-var cors = require('cors')
+var cors = require('cors');
+var app = express();
 var bodyParser = require('body-parser');
 var mongoose = require ('mongoose');
-
 
 // Body-parser
 app.use(bodyParser.urlencoded({ extended: true}));
@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({ extended: true}));
 app.use(express.static(__dirname + '/public'));
 
 //CORS
-app.use(cors())
+app.use(cors());
 
 
 // Connect to database
